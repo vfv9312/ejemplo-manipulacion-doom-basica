@@ -355,6 +355,38 @@ border-radius: 8px;
     }
 
 /*Esto corresponde a clase9.html */
+/*Esto corresponde a clase10.html */
+.mi-orden{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.title10{
+    font-size: var(--lg);
+    margin-bottom: 40px;
+}
+.mi-orden-contenedor{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    width: 450px;
+}
+.productos {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.productos p:first-child{
+    display: inline-block;
+    margin-right: 280px;
+}
+.productos span{
+    display: flex;
+    flex-direction: column;
+}
+/*Esto corresponde a clase10.html */
 
 @media (max-width: 640px) {
     .logo{
