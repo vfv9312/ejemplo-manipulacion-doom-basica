@@ -459,6 +459,7 @@ nav {
 
 /*Esto corresponde a clase11.html */
 
+/*Esto corresponde a clase12.html */
 .product-info {
     margin: 24px 24px 0 24px;
     display: flex;
@@ -492,6 +493,7 @@ nav {
     padding-bottom: 24px;
     position: absolute;
     right: 0;
+    box-sizing: border-box;
 
 }
 .product-detail-close:hover
@@ -514,6 +516,20 @@ aside img:nth-child(2){
     height: 360px;
     border-radius: 0 0 20px 20px;
     object-fit: cover;
+}
+/*Esto corresponde a clase12.html */
+
+
+.title-container img {
+    transform: rotate(180deg);
+    margin-right: 14px;
+  }
+
+  .shopping-cart13 img:nth-child(2){
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin-bottom: 24px;
 }
 
 @media (max-width: 640px) {
@@ -559,8 +575,11 @@ aside img:nth-child(2){
     }
 
     /*Esto corresponde a clase11.html */
+
+    /*Esto corresponde a clase12.html */
     .product-detail {
         width: 100%;
       }
+      /*Esto corresponde a clase12.html */
     
 }
