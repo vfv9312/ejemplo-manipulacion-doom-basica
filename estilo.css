@@ -260,7 +260,6 @@ font-size: var(--sm);
     text-decoration: none;
     color: var(--black);
     font-weight: bold;
-
 }
 .mobile-menu ul{
     padding: 0;
