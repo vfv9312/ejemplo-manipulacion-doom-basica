@@ -252,6 +252,8 @@ font-size: var(--sm);
 
 /*Esto corresponde a clase8.html */
 .mobile-menu{
+    position: absolute;
+    top: 60px;
     padding: 24px; ;
 }
 .mobile-menu a{
@@ -573,6 +575,7 @@ aside img:nth-child(2){
 
 /*Esto corresponde a clase11.html */
     .menu11{
+        cursor: pointer;
         display: block;
     }
     .navbar-left ul{
