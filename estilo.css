@@ -161,6 +161,7 @@ margin-bottom: 24px ;
 }
 /*Esto corresponde a clase6.html */
 .cards-container{
+    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
     gap: 26px;
