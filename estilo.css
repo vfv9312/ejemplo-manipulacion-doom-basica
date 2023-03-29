@@ -252,6 +252,7 @@ font-size: var(--sm);
 
 /*Esto corresponde a clase8.html */
 .mobile-menu{
+    background-color: var(--hospital-green);
     position: absolute;
     top: 60px;
     padding: 24px; ;
@@ -316,7 +317,7 @@ font-size: var(--sm);
     gap: 16px;
     align-items: center;
 }
-.shopping-cart img{
+.shopping-cart img:nth-child(1){
     width: 70px;
     height: 70px;
     border-radius: 20px;
@@ -498,6 +499,7 @@ nav {
     justify-content: center;
 }
 .product-detail{
+    background-color: var(--very-light-pink);
     width: 360px;
     padding-bottom: 24px;
     position: absolute;
@@ -535,8 +537,8 @@ aside img:nth-child(2){
   }
 
   .shopping-cart13 img:nth-child(2){
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 20px;
     margin-bottom: 24px;
 }
