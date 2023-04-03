@@ -5,19 +5,25 @@ const menuicono = document.querySelector('.menu11');
 const compras = document.querySelector('.product-detail');
 const iconocompras = document.querySelector('.navbar-shopping-cart');
 const cardsContainer=document.querySelector('.cards-container');
+const detalles=document.querySelector('.product-detalle ');
+const iconocerrardetalle = document.querySelector('.product-detail-close');
 
 
 menuicono.addEventListener('click', togglemovilmenu);
 menuEmail.addEventListener('click', mostrarmenu);
 iconocompras.addEventListener('click', mostrarcarrito);
+iconocerrardetalle.addEventListener('click', cerrardetalle);
+
 
 
 
 function mostrarmenu() {
+    detalles.classList.add('inactivo');
     escritoriokenu.classList.toggle('inactivo');// quita o pone lo que coloquemos
 }
 
 function togglemovilmenu() {
+    detalles.classList.add('inactivo');
     const isAsideClosed = compras.classList.contains('inactivo'); //agarra el valor inactivo, si esta inactivo la pestaña de compras
   
     if (!isAsideClosed) { //si esta activo la pestaña de compras entra esta condicion
@@ -29,6 +35,7 @@ function togglemovilmenu() {
 }
 
 function mostrarcarrito() {
+    detalles.classList.add('inactivo');
     const isMobileMenuClosed = movilmenu.classList.contains('inactivo'); //agarra el valor inactivo, si esta inactivo la pestaña de movil
 
     if (!isMobileMenuClosed) {//si esta activo la pestaña de menu entra esta condicion
@@ -67,6 +74,7 @@ function renderProducts(arr){
 
         const productImg=document.createElement('img');
         productImg.setAttribute('src',product.imagen);
+        productImg.addEventListener('click', abrirdetalles); // aqui abrimos detalles si le damos clik a un producto
 
         const productInfo=document.createElement('div');
         productInfo.classList.add('product-info');
@@ -93,4 +101,11 @@ function renderProducts(arr){
         cardsContainer.appendChild(productCard);}}
 
 renderProducts(listaProductos);
+
+function abrirdetalles() {
+    detalles.classList.remove('inactivo');
+}
+function cerrardetalle() {
+       detalles.classList.add('inactivo');
+}
 
